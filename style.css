@@ -42,34 +42,75 @@ table {
 	border-spacing: 0;
 }
 
-div {
-    text-align: center;
+.body {
+    line-height: 24px;
+}
+.wrapper {
+    width: 900px;
     margin: 0 auto;
-}
-h1 {
-    color: rgb(180, 8, 8);
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-}
-h2 {
-    color: crimson;
     font-size: 16px;
-    line-height: 24px;
+    
+   }
+ 
+   h1 {
+   color: rgb(180, 8, 8);
+   font-weight: 700;
+   line-height: 24px;
+   text-align: center;
+   }
+   h2 {
+   color: crimson;
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 700;
+   text-align: center;
+   }
+   
+   h3 {
+   color: crimson;
+   font-size: 16px;
+   line-height: 24px;
     font-weight: 700;
-    text-align: center;
-}
-h3 {
-    color: crimson;
+   text-align: center;
+   }
+   p {
     font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-    text-align: center;
+   line-height: 24px;
+   text-align: justify;
+   }
+   .fixed {
+    position: fixed;
+    top: 300px;
+    left: 0;
+    width: 200px;
+    min-height: 300px;
+
+   }
+   .fixed p {
+    line-height: 30px;
+    height: 30px;
+   }
+   .wr {
+   position: relative;
+    display: inline-block;
+    
+   }
+.abs {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    visibility: hidden;
+
 }
-p {
-    font-size: 16px;
-    line-height: 24px;
-    text-align: justify;
+.wr:hover .abs {
+    visibility: visible;
+    background: bisque;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .container {
@@ -80,18 +121,26 @@ p {
 
 .one {
     font-size: 0px;
+    
 }
 
 .thwo {
     font-size: 0px;
+   
 }
 
 .three {
     font-size: 0px;
+    
 }
 
 .four {
     font-size: 0px;
+    
+}
+
+.float {
+    float: left;
 }
 
 .t_cell {
@@ -113,8 +162,8 @@ p {
 .in_thwo {
     width: 800px;
     font-size: 16px;
- 
 }
+
 .s_thwo {
     width: 400px;
     font-size: 16px;
@@ -150,6 +199,7 @@ p {
 
 .in_c {
     font-size: 0;
+    
 }
 
 .s_c {
@@ -177,6 +227,7 @@ p {
 
 .in_e {
     font-size: 0;
+    
 }
 
 .in_f {
@@ -184,7 +235,6 @@ p {
     font-size: 16px;
     text-align: justify;
     background: brown;
-    
 }
 
 .in_g {
@@ -197,4 +247,195 @@ p {
 .s_g {
     background: burlywood;
     text-align: justify;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_w400 {
+    flex: 0 1 400px;
+}
+
+.flex_w800 {
+    flex: 0 1 800px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+}
+.grid_a {
+    display: grid;
+    grid-template-columns: 800px 400px;
+}
+
+.grid_b {
+    display: grid;
+    grid-template-columns: 400px 800px;
+}
+
+.grid_c {
+    display: grid;
+    grid-template-columns: 400px 400px;
+}
+
+.grid_d {
+    display: grid;
+    grid-template-columns: 400px 400px;
+}
+.grid_area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-areas: 
+    "a b c"
+    "d d e"
+    "f f g"
+    "h h g"
+    "i k k"
+    "i l m"
+    "n n o"
+    "p q o"
+    "p q o"
+}
+
+.in_area {
+    background: bisque;
+}
+.grid_a1 {
+    background: lawngreen;
+    grid-area: a;
+}
+.grid_a2 {
+    background: lawngreen;
+    grid-area: b;
+}
+.grid_a3 {
+    background: lawngreen;
+    grid-area: c;
+}
+.grid_a4 {
+    background: orange;
+    grid-area: d;
+}
+.grid_a5 {
+    background: orangered;
+    grid-area: f;
+}
+
+.grid_a6 {
+    background: yellow;
+    grid-area: e;
+}
+
+.grid_a7 {
+    background: red;
+    grid-area: h;
+}
+
+.grid_a8 {
+    background: brown;
+    grid-area: g;
+}
+
+.grid_a9 {
+    background: plum;
+    grid-area: i;
+}
+
+.grid_a10 {
+    background: palevioletred;
+    grid-area: k;
+}
+
+.grid_a11 {
+    background: pink;
+    grid-area: l;
+}
+
+.grid_a12 {
+    background: palegoldenrod;
+    grid-area: m;
+}
+
+.grid_a13 {
+    grid-area: n;
+}
+
+.grid_a14 {
+    background: gold;
+    grid-area: p;
+}
+
+.grid_a15 {
+    background: olive;
+    grid-area: q;
+}
+
+.grid_a16 {
+    background: orange;
+    grid-area: o;
+}
+.top_menu {
+    font-size: 0;
+    text-align: center;
+    position: relative;
+   
+
+   
+}
+.menu {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    list-style: circle;
+    vertical-align: bottom;
+}
+ul li:hover {
+    background: yellow;
+}
+ul li+li {
+    border-left: 2px solid yellowgreen;
+}
+ul li a{
+    display: block;
+    padding: 20px 30px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.second_menu {
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    display: none;
+    
+}
+
+.second_menu li {
+    border: none;
+}
+.top_menu .menu:hover .second_menu {
+    display: block;
+}
+.second_menu1 {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    display: none;
+}
+.second_menu2 {
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: none;
+}
+.second_menu .menu1:hover .second_menu1 {
+    display: block;
+}
+.second_menu .menu1:hover .second_menu2 {
+    display: block;
+}
+.menu1 {
+    display: block;
+    
 }
