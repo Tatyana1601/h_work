@@ -78,47 +78,7 @@ table {
    line-height: 24px;
    text-align: justify;
    }
-   .fixed {
-    position: fixed;
-    top: 300px;
-    left: 0;
-    width: 200px;
-    min-height: 300px;
-
-   }
-   .fixed p {
-    line-height: 30px;
-    height: 30px;
-   }
-   .wr {
-   position: relative;
-    display: inline-block;
-    
-   }
-.abs {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    visibility: hidden;
-
-}
-.wr:hover .abs {
-    visibility: visible;
-    background: bisque;
-}
-
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 100px 0;
-} 
-
+   
 .one {
     font-size: 0px;
     
@@ -344,6 +304,50 @@ table {
     background: orange;
     grid-area: o;
 }
+.fixed {
+    position: fixed;
+    top: 50%;
+    margin-top: -150px;
+    left: 0;
+    width: 200px;
+    min-height: 300px;
+
+   }
+   .fixed p {
+    line-height: 30px;
+    height: 30px;
+   }
+   .wr {
+   position: relative;
+    display: inline-block;
+    
+   }
+.abs {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    width: 100%;
+    visibility: hidden;
+    text-align: center;
+
+}
+.wr:hover .abs {
+    visibility: visible;
+    background: bisque;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+} 
+
 .top_menu {
     font-size: 0;
     text-align: center;
