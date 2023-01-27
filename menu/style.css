@@ -379,6 +379,7 @@ table {
     vertical-align: bottom;
     position: relative;
     padding: 10px 60px 10px 10px;
+
 }
 .top_menu .menu_1 >a:before{
     content: "";
@@ -419,13 +420,18 @@ table {
     color: black;
     text-transform: uppercase;
     text-decoration: none;
+   
 }
 .second_menu {
     position: absolute;
-    top: 100%;
+    top: -500%;
     left: 0;
-    display: none;
     background: bisque;
+    transition: all 1.5s cubic-bezier(0.23, 0.87, 0.32, 1.28);
+    -webkit-transition: all 1.5s cubic-bezier(0.23, 0.87, 0.32, 1.28);
+    -moz-transition: all 1.5s cubic-bezier(0.23, 0.87, 0.32, 1.28);
+    -ms-transition: all 1.5s cubic-bezier(0.23, 0.87, 0.32, 1.28);
+    -o-transition: all 1.5s cubic-bezier(0.23, 0.87, 0.32, 1.28);
 }
 .second_menu li {
     border: none;
@@ -437,27 +443,41 @@ table {
     display: block;
 }
 .top_menu .menu_3:hover .second_menu {
-    display: block;
+   top: 100%;
+  
 }
 .second_menu1 {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 100%;
-    display: none;
+    height: 0;
+    overflow: hidden;
     background: bisque;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
 }
 .second_menu2 {
     position: absolute;
     bottom: 0;
     right: 100%;
-    display: none;
     background: bisque;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
 }
 .second_menu .menu3:hover .second_menu1 {
-    display: block;
+    height: 132px;
 }
 .second_menu .menu6:hover .second_menu2 {
-    display: block;
+    opacity: 1;
+    pointer-events: all;
 }
 .menu4 {
     display: block;
