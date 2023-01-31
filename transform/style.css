@@ -635,11 +635,11 @@ table {
    -o-transition: 2s ease-out;
 }
 .transform:hover {
-    transform: translate(-400px);
-    -webkit-transform: translate(-400px);
-    -moz-transform: translate(-400px);
-    -ms-transform: translate(-400px);
-    -o-transform: translate(-400px);
+    transform: translate(-70px);
+    -webkit-transform: translate(-70px);
+    -moz-transform: translate(-70px);
+    -ms-transform: translate(-70px);
+    -o-transform: translate(-70px);
 }
 .transform_menu{
     position: relative;
@@ -764,8 +764,4 @@ table {
         background: greenyellow;
         box-shadow: 0 0 5px greenyellow;
     }
-}
-.transform :hover .transform>::before{
-    animation: none;
-    -webkit-animation: none;
 }
