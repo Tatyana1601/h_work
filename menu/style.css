@@ -356,7 +356,6 @@ table {
 .menu_1 {
     display: inline-block;
     font-size: 16px;
-    padding: 10px 20px;
     list-style: circle;
     vertical-align: bottom;
     position: relative;
@@ -365,7 +364,6 @@ table {
 .menu_2 {
     display: inline-block;
     font-size: 16px;
-    padding: 10px 20px;
     list-style: circle;
     vertical-align: bottom;
     position: relative;
@@ -374,11 +372,10 @@ table {
 .menu_3 {
     display: inline-block;
     font-size: 16px;
-    padding: 10px 20px;
     list-style: circle;
     vertical-align: bottom;
     position: relative;
-    padding: 10px 60px 10px 10px;
+    padding: 10px 20px;
 
 }
 .top_menu .menu_1 >a:before{
@@ -414,13 +411,36 @@ table {
  ul li+li {
     border-left: 2px solid yellowgreen;
 }
-.top_menu li >a{
+.top_menu .menu_1 >a{
+    display: block;
+    padding: 30px 20px 20px 60px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+.top_menu .menu_2 >a{
+    display: block;
+    padding: 30px 20px 20px 60px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+.top_menu .menu_3 >a{
+    display: block;
+    padding: 30px 60px 20px 20px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+.top_menu li>a {
     display: block;
     padding: 20px 30px;
     color: black;
     text-transform: uppercase;
     text-decoration: none;
-   
 }
 .second_menu {
     position: absolute;
@@ -488,7 +508,6 @@ table {
 .second_menu .menu3 {
     display: inline-block;
     font-size: 16px;
-    padding: 10px 20px;
     list-style: circle;
     vertical-align: bottom;
     position: relative;
@@ -518,7 +537,6 @@ table {
 .second_menu .menu6 {
     display: inline-block;
     font-size: 16px;
-    padding: 10px 20px;
     list-style: circle;
     vertical-align: bottom;
     position: relative;
@@ -543,7 +561,6 @@ table {
 .second_menu .menu7_1 {
     display: inline-block;
     font-size: 16px;
-    padding: 10px 20px;
     list-style: circle;
     vertical-align: bottom;
     position: relative;
@@ -567,7 +584,6 @@ table {
 .second_menu .menu4 {
     display: inline-block;
     font-size: 16px;
-    padding: 10px 20px;
     list-style: circle;
     vertical-align: bottom;
     position: relative;
