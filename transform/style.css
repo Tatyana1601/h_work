@@ -42,8 +42,9 @@ table {
 	border-spacing: 0;
 }
 
-.body {
+body {
     line-height: 24px;
+    overflow: hidden;
  
 }
 .wrapper {
@@ -330,11 +331,18 @@ table {
     width: 100%;
     visibility: hidden;
     text-align: center;
-
+   
 }
-.wr:hover .abs {
+.text {
+    background: linear-gradient(magenta,rgb(224, 7, 7), magenta);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    font-size: 24px;
+    font-weight: 700;
+}
+.wr:hover .abs{
     visibility: visible;
-    background: bisque;
 }
 
 .clearfix:after {
@@ -596,19 +604,16 @@ table {
     display: inline-block;
     font-size: 16px;
     background: url(images/css_sprites.png) -120px -60px;
-    border: 2px solid grey;
 }
 .b_m2 {
     display: inline-block;
     font-size: 16px;
     background: url(images/css_sprites.png) -180px -120px;
-    border: 2px solid grey;
 }
 .b_m3 {
     display: inline-block;
     font-size: 16px;
     background: url(images/css_sprites.png) -60px -120px;
-    border: 2px solid grey;
 }
  .bottom_menu li a {
     display: block;
@@ -616,152 +621,121 @@ table {
     height: 60px;
 }
 .transform {
-   position: absolute;
-   width: 400px;
-   top: 50%;
-   margin-top: -200px;
-   right: 0;
-   height: 300px;
-   font-size: 0;
-   transform: translate(400px);
-   -webkit-transform: translate(400px);
-   -moz-transform: translate(400px);
-   -ms-transform: translate(400px);
-   -o-transform: translate(400px);
-   transition: 2s ease-out;
-   -webkit-transition: 2s ease-out;
-   -moz-transition: 2s ease-out;
-   -ms-transition: 2s ease-out;
-   -o-transition: 2s ease-out;
-}
-.transform:hover {
-    transform: translate(-70px);
-    -webkit-transform: translate(-70px);
-    -moz-transform: translate(-70px);
-    -ms-transform: translate(-70px);
-    -o-transform: translate(-70px);
-}
-.transform_menu{
-    position: relative;
-    transform: translate(200px, 50px);
-    -webkit-transform: translate(200px, 50px);
-    -moz-transform: translate(200px, 50px);
-    -ms-transform: translate(200px, 50px);
-    -o-transform: translate(200px, 50px);
-}
-.transform_menu li {
-    display: inline-block;
-    font-size: 16px;
-}
-
-.transform_menu li >a{
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    width: 60px;
-    height: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -120px;
+    right: -200px;
+    padding: 10px 20px 10px 40px;
     overflow: hidden;
-   border: 2px solid green;
+    font-size: 0;
+    transition: all 2s  cubic-bezier(0.23, 0.87, 0.32, 1.28);
+    -webkit-transition: all 2s  cubic-bezier(0.23, 0.87, 0.32, 1.28);
+    -moz-transition: all 2s  cubic-bezier(0.23, 0.87, 0.32, 1.28);
+    -ms-transition: all 2s  cubic-bezier(0.23, 0.87, 0.32, 1.28);
+    -o-transition: all 2s  cubic-bezier(0.23, 0.87, 0.32, 1.28);
+    transform: translate(1px, 10px);
+    -webkit-transform: translate(1px, 10px);
+    -moz-transform: translate(1px, 10px);
+    -ms-transform: translate(1px, 10px);
+    -o-transform: translate(1px, 10px);
+    z-index: 10;
+ }
+ .transform:hover {
+    transform: translate(-200px, 10px);
+    -webkit-transform: translate(-200px, 10px);
+    -moz-transform: translate(-200px, 10px);
+    -ms-transform: translate(-200px, 10px);
+    -o-transform: translate(-200px, 10px);
+ }
+ 
+ .transform .name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: lightgreen;
+    width: 100%;
+    font-size: 24px;
+    transform-origin: 12px 12px;
+    transform: rotate(-90deg);
+    animation: glowing 2s linear infinite alternate 0s;
+    -webkit-animation: glowing 2s linear infinite alternate 0s;
+ }
+  
+ .transform_menu li{
+     display: inline-block;
+     font-size: 16px;
+     padding: 7px;
+     
+ }
+ .transform_menu li >a{
+      display: block;
+      text-transform: uppercase;
+      text-decoration: none;
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      animation: glowing 2s linear infinite alternate 0s;
+     -webkit-animation: glowing 2s linear infinite alternate 0s;
+ 
+ } 
+ .transform_menu .t_1 >a:before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: url(images/css_sprites_1.png) -120px -60px;
     transform: rotate(45deg);
-} 
-.transform_menu .t_1 >a:before{
-   content: "";
-   width: 60px;
-   height: 60px;
-   position: absolute;
-   background: url(images/css_sprites_1.png) -120px -60px;
-   transform: rotate(-45deg) ;
-   -webkit-transform: rotate(-45deg) ;
-   -moz-transform: rotate(-45deg) ;
-   -ms-transform: rotate(-45deg) ;
-   -o-transform: rotate(-45deg) ;
-}
-.transform_menu .t_2 >a:before{
-    content: "";
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    background: url(images/css_sprites_1.png) 0 60px;
-    transform: rotate(-45deg) ;
-    -webkit-transform: rotate(-45deg) ;
-    -moz-transform: rotate(-45deg) ;
-    -ms-transform: rotate(-45deg) ;
-    -o-transform: rotate(-45deg) ;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
  }
- .transform_menu .t_3 >a:before{
-    content: "";
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    background: url(images/css_sprites_1.png) 60px -180px;
-    transform: rotate(-45deg) ;
-    -webkit-transform: rotate(-45deg) ;
-    -moz-transform: rotate(-45deg) ;
-    -ms-transform: rotate(-45deg) ;
-    -o-transform: rotate(-45deg) ;
+ .transform_menu .t_2 >a:before{
+     content: "";
+     width: 60px;
+     height: 60px;
+     position: absolute;
+     background: url(images/css_sprites_1.png) 0 60px;
+     transform: rotate(45deg);
+  }
+  .transform_menu .t_3 >a:before{
+     content: "";
+     width: 60px;
+     height: 60px;
+     position: absolute;
+     background: url(images/css_sprites_1.png) 60px -180px;
+     transform: rotate(-45deg) ;
+     transform: rotate(45deg);
+  }
+  .transform_menu .t_4 >a:before{
+     content: "";
+     width: 60px;
+     height: 60px;
+     position: absolute;
+     background: url(images/css_sprites_1.png) -60px 60px;
+     transform: rotate(45deg);
+  }
+  .transform_menu{
+     width: 150px;
+     padding: 25px 10px 15px 0;
+     transform: rotate(-45deg);
+     -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+     -ms-transform: rotate(-45deg);
+     -o-transform: rotate(-45deg);
+    
  }
- .transform_menu .t_4 >a:before{
-    content: "";
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    background: url(images/css_sprites_1.png) -60px 60px;
-    transform: rotate(-45deg) ;
-    -webkit-transform: rotate(-45deg) ;
-    -moz-transform: rotate(-45deg) ;
-    -ms-transform: rotate(-45deg) ;
-    -o-transform: rotate(-45deg) ;
+ @keyframes glowing {
+     0% {
+         background: lightgreen;
+         box-shadow: 0 0 5px lightgreen;
+     }
+     50% {
+         background: lightseagreen;
+         box-shadow: 0 0 20px lightseagreen;
+     }
+     100% {
+         background: greenyellow;
+         box-shadow: 0 0 5px greenyellow;
+     }
  }
- .transform_menu .t_2  {
-    transform: translate(-6px, 60px);
-    -webkit-transform: translate(-6px, 60px);
-    -moz-transform: translate(-6px, 60px);
-    -ms-transform: translate(-6px, 60px);
-    -o-transform: translate(-6px, 60px);
-}
-.transform_menu .t_3  {
-    transform: translate(-180px, 60px);
-    -webkit-transform: translate(-180px, 60px);
-    -moz-transform: translate(-180px, 60px);
-    -ms-transform: translate(-180px, 60px);
-    -o-transform: translate(-180px, 60px);
-}
-.transform_menu .t_4  {
-    transform: translate(-180px, 120px);
-    -webkit-transform: translate(-180px, 120px);
-    -moz-transform: translate(-180px, 120px);
-    -ms-transform: translate(-180px, 120px);
-    -o-transform: translate(-180px, 120px);
-}
-.transform:before{
-   content: "HOVER ME";
-   position: absolute;
-   top: 50%;
-   margin-top: -12px;
-   left: -40%;
-   font-size: 24px;
-   transform: rotate(-90deg);
-   background: lightgreen;
-   width: 300px;
-   -webkit-transform: rotate(-90deg);
-   -moz-transform: rotate(-90deg);
-   -ms-transform: rotate(-90deg);
-   -o-transform: rotate(-90deg);
-   text-align: center;
-   animation: glowing 2s linear infinite alternate 0s;
-   -webkit-animation: glowing 2s linear infinite alternate 0s;
-}
-@keyframes glowing {
-    0% {
-        background: lightgreen;
-        box-shadow: 0 0 5px lightgreen;
-    }
-    50% {
-        background: lightseagreen;
-        box-shadow: 0 0 20px lightseagreen;
-    }
-    100% {
-        background: greenyellow;
-        box-shadow: 0 0 5px greenyellow;
-    }
-}
