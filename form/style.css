@@ -151,21 +151,33 @@ textarea{
 	width: 200px;
 	height: 50px;
 	border: none;
+	transition: all 0.5s ease-in;
 	border-radius: 10px/10px;
 	-webkit-border-radius: 10px/10px;
 	-moz-border-radius: 10px/10px;
 	-ms-border-radius: 10px/10px;
 	-o-border-radius: 10px/10px;
 	-webkit-border-radius:10px/10px;
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
 }
 
 textarea:hover{
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
-	background: peachpuff ;
+	background: peachpuff;
 }
 textarea:focus{
-	background: whitesmoke ;
+	transform: translate(15px);
+	width: 250px;
+	background: whitesmoke;
+	-webkit-transform: translate(15px);
+	-moz-transform: translate(15px);
+	-ms-transform: translate(15px);
+	-o-transform: translate(15px);
 }
+
 .number{
 	display: inline-block;
 	position: relative;
@@ -208,4 +220,9 @@ input::-webkit-inner-spin-button{
 }
 .group_1{
 	text-align: center;
+}
+textarea::placeholder{
+	color: palevioletred;
+	font-size: 16px;
+	font-weight: 700;
 }
