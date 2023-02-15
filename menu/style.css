@@ -371,7 +371,7 @@ table {
 } 
 
 .top_menu {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 0;
     text-align: center;
     position: relative;
@@ -466,7 +466,7 @@ table {
     text-decoration: none;
 }
 .second_menu {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'book';
     position: absolute;
     top: -500%;
     left: 0;
@@ -491,7 +491,7 @@ table {
   
 }
 .second_menu1 {
-    font-family: 'book';
+    font-family: 'Thoro';
     position: absolute;
     top: 0;
     left: 100%;
