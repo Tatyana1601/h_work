@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Thoro';
+    src: url('fonts/Thoro.eot');
+    src: url('fonts/Thoro.eot') format('embedded-opentype'),
+         url('fonts/Thoro.woff2') format('woff2'),
+         url('fonts/Thoro.woff') format('woff'),
+         url('fonts/Thoro.ttf') format('truetype'),
+         url('fonts/Thoro.svg#Thoro') format('svg');
+}
