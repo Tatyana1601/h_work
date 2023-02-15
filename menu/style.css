@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@font-face {
+    font-family: 'book';
+    src: url('fonts/book/antquabi-webfont.eot');
+    src: url('fonts/book/antquabi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/book/antquabi-webfont.woff2') format('woff2'),
+         url('fonts/book/antquabi-webfont.woff') format('woff'),
+         url('fonts/book/antquabi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+@font-face {
+        font-family: 'Thoro';
+        src: url('fonts/thoro/Thoro.eot');
+        src: url('fonts/thoro/Thoro.eot') format('embedded-opentype'),
+             url('fonts/thoro/Thoro.woff2') format('woff2'),
+             url('fonts/thoro/Thoro.woff') format('woff'),
+             url('fonts/thoro/Thoro.ttf') format('truetype'),
+             url('fonts/thoroThoro.svg#Thoro') format('svg');
+    }
+    
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -349,6 +371,7 @@ table {
 } 
 
 .top_menu {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0;
     text-align: center;
     position: relative;
@@ -443,6 +466,7 @@ table {
     text-decoration: none;
 }
 .second_menu {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     position: absolute;
     top: -500%;
     left: 0;
@@ -467,6 +491,7 @@ table {
   
 }
 .second_menu1 {
+    font-family: 'book';
     position: absolute;
     top: 0;
     left: 100%;
@@ -480,6 +505,7 @@ table {
     -o-transition: all 1s ease-in-out;
 }
 .second_menu2 {
+    font-family: 'Thoro';
     position: absolute;
     bottom: 0;
     right: 100%;
