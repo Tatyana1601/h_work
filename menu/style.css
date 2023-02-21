@@ -7,7 +7,7 @@
          url('fonts/book/antquabi-webfont.woff') format('woff'),
          url('fonts/book/antquabi-webfont.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
+    font-style: normal;}
 @font-face {
         font-family: 'Thoro';
         src: url('fonts/thoro/Thoro.eot');
@@ -18,7 +18,7 @@
              url('fonts/thoroThoro.svg#Thoro') format('svg');
     }
     
-}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
