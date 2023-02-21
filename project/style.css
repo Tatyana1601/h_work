@@ -80,7 +80,6 @@ body{
 .for_menu_1 li{
     font-size: 14px;
     line-height: 14px;
-    line-height: 11px;
     display: inline-block;
     background: #8cd3c9 url(image/backgrond_3.png) 2px 8px no-repeat;
     padding: 8px 0 11px 30px;
@@ -114,7 +113,6 @@ h1 {
     position: relative;
     font-size: 22px;
     color: #157d8c;
-    line-height: 53px;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
 }
